@@ -1,10 +1,11 @@
 import Link from "next/Link"
+import "../styles/Header.module.scss"
 
 export default function Header(){
       return (
             <header>
                   <Link href="/">
-                        <img src="/static" alt="" />
+                        <img src="./iphone.png" alt="iphone" />
                   </Link>
                   <Link href="/">
                         <h1>iPhone Shop</h1>
