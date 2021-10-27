@@ -1,6 +1,6 @@
 import styles from "../styles/Jumbotron.module.scss"
 import Image from "next/image"
-import iphone from "../public/iphone.png"
+import iphone from "../public/iphone&.png"
 
 const Jumbotron = () => {
       return(

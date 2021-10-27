@@ -1,7 +1,6 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { products } from "../../index";
 import { IProduct } from "../../../components/Product";
-import image from "next/image";
 
 export interface ISnipcartProduct {
       id: string,
@@ -20,7 +19,7 @@ export default function handler(req: NextApiRequest, res: NextApiResponse){
             return
       }
 
-      const snipcartProduct: ISnipcartProduct= {...product, image: product?.image.src ?? ""}
+      const snipcartProduct: ISnipcartProduct= {... product, image: product?.image.src ?? ""}
 
       res.status(200).json(snipcartProduct)
 }
